@@ -52,9 +52,17 @@ Usage
 // get AMQP component
 $amqp = Yii::$app->amqp;
 
-// basic publish message
+// declare exchange
+$amqp->exchangeDeclare('myExchange','fanout');
 
-$amqp->basicPublish($message,$exchange,$routingKey);
+// declare queue
+$amqp->queueDeclare('myQueue');
+
+// binding queue
+$amqp->bindQueueExchange('myQueue','myExchange');
+
+// basic publish message
+$amqp->basicPublish($message, $exchange, $routingKey);
 
 
 ......
