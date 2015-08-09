@@ -1,0 +1,16 @@
+{
+  "name": "grigorieff/yii2-amqp",
+  "description": "Yii2 component for AMQP",
+  "keywords": ["yii", "extension", "amqp", "rabbitmq"],
+  "type": "yii-extension"
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mike Grigorieff",
+      "email": "grigorief@gmail.com"
+    }
+  ],
+  "require": {
+    "videlalvaro/php-amqplib": "2.5.*"
+  }
+}
