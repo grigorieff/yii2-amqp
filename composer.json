@@ -2,7 +2,7 @@
   "name": "grigorieff/yii2-amqp",
   "description": "Yii2 component for AMQP",
   "keywords": ["yii", "extension", "amqp", "rabbitmq"],
-  "type": "yii-extension"
+  "type": "yii-extension",
   "license": "MIT",
   "authors": [
     {
